@@ -1,0 +1,19 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+kendo-textbox {
+  margin-bottom: 20px;
+}
+div[_ngcontent-qlk-c158] {
+  height: 100px;
+  width: 100%;
+  margin:auto;
+  background: aliceblue;
+}
+
+.container{
+  height: inherit;
+  margin: 10%;
+  width: 70%;;
+}

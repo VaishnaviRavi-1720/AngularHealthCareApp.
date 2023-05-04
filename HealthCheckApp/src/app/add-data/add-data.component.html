@@ -1,0 +1,20 @@
+<h3>Patient Blood Pressure Data</h3>
+ <form (ngSubmit)="addData()">
+  <!-- <kendo-datepicker [(ngModel)]="selectedDate"></kendo-datepicker> -->
+  <div class="col-xs-12 col-md-6 example-col">
+    <label [for]="datepicker">DatePicker: </label>
+    <kendo-datepicker #datepicker [style.width.px]="180" [(ngModel)]="selectedDate" name="selectedDate" id="selectedDate"></kendo-datepicker>
+  </div>
+  <div>
+    <kendo-label class="k-form" for="desc" name="desc" text="Enter Blood Pressure Reading:" > </kendo-label>
+    <input type="number" [(ngModel)]="upperRange" name="upperRange" id="upperRange"> <p>By</p>
+    <input type="number" [(ngModel)]="lowerRange" name="lowerRange" id="lowerRange"><br/><br/>
+  </div>
+  <button type="submit">Add Data</button><br/><br/>
+</form>
+
+<kendo-grid [data]="gridData">
+  <kendo-grid-column field="date" title="Date"></kendo-grid-column>
+  <kendo-grid-column field="upperRange" title="Upper Value"></kendo-grid-column>
+  <kendo-grid-column field="lowerRange" title="Lower Value"></kendo-grid-column>
+</kendo-grid>

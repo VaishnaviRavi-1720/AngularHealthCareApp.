@@ -1,0 +1,14 @@
+<h3>Patient Vitals</h3>
+ <form>
+  <!-- <kendo-datepicker [(ngModel)]="selectedDate"></kendo-datepicker> -->
+
+  <kendo-label class="k-form" for="desc" name="desc" text="Enter temperature in Celcius:" > </kendo-label>
+  <input type="number" [(ngModel)]="temperatureInCelsius" name="temperatureInCelsius" id="temperatureInCelsius"><br/><br/>
+  <button (click)="addData()"type="submit">Add Data</button><br/><br/>
+</form>
+
+<kendo-grid [data]="gridData">
+  <kendo-grid-column field="date" title="Date"></kendo-grid-column>
+  <kendo-grid-column field="temperature" title="Temperature (Celsius)"></kendo-grid-column>
+</kendo-grid>
+

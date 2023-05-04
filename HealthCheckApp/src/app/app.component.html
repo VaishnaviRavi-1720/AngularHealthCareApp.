@@ -1,0 +1,44 @@
+
+  <div style="height: 100%; width: 100%;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/">Home</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" routerLink="/patientvitals">Temperature Check</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" routerLink="/adddata">Blood Pressure Check</a>
+            </li>
+          </ul>
+        </div>
+        <div style="align-content: right;">
+          <h4>Welcome {{username}}!</h4>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1 class="text-center" style="margin: 10% ; font-weight: bolder; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Health Check Application</h1>
+      <!-- <app-todos>
+
+      </app-todos> -->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+<!-- <app-header></app-header> -->
+<!-- <app-patient-vitals></app-patient-vitals> -->
+<!-- <router-outlet></router-outlet> -->
+
+
+
+
+
+
+
+
